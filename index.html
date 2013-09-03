@@ -5,12 +5,12 @@
     <title>Social Dynamics Lab</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="flat/css/flat-ui.css" rel="stylesheet">
+    <link href="css/flat-ui.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'>  
     <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300' rel='stylesheet' type='text/css'>
     <style type="text/css">
       body {
-        padding-top: 60px;
+        padding-top: 80px;
         padding-bottom: 40px;
 
       }
@@ -19,7 +19,7 @@
         padding: 9px 0;
       }
       .hero-unit {
-        background-image: url();
+        background-image: url('http://placehold.it/900x200');
         color: white;
 
       }
@@ -45,9 +45,15 @@
         max-width: 980px;
         margin:auto;
       }
-      .main {
+      .story {
+        padding-left: 2%;
       }
-
+      .story:hover {
+        background: #ECF0F1;
+      }
+      .recent:hover {
+        background: #ECF0F1;
+      }
       <!-- modifications to bootstrap elements -->
       .affix {
         top: 50px;
@@ -62,6 +68,8 @@
         }
       }
 
+      @media (max-width: 480px) {
+      }
     </style>
 
     <link href="css/bootstrap-responsive.min.css" rel="stylesheet">
@@ -116,28 +124,28 @@
       <div class="row-fluid ">
         <div class="span9">
           <div class="row-fluid">
-            <div class="span12">
+            <div class="span12 story">
               <h2>Heading</h2>
               <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
               <p><a class="btn btn-primary" href="#">View details &raquo;</a></p>
             </div><!--/span-->
           </div><!--/row-fluid-->
           <div class="row-fluid">
-            <div class="span12">
+            <div class="span12 story">
               <h2>Heading</h2>
               <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
               <p><a class="btn btn-primary" href="#">View details &raquo;</a></p>
             </div><!--/span-->
           </div><!--/row-fluid-->
           <div class="row-fluid">
-            <div class="span12">
+            <div class="span12 story">
               <h2>Heading</h2>
               <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
               <p><a class="btn btn-primary" href="#">View details &raquo;</a></p>
             </div><!--/span-->
           </div><!--/row-fluid-->
           <div class="row-fluid">
-            <div class="span12">
+            <div class="span12 story">
               <h2>Heading</h2>
               <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
               <p><a class="btn btn-primary" href="#">View details &raquo;</a></p>
@@ -186,12 +194,13 @@
       <hr>
 
       <footer>
-        <p>&copy; Company 2013</p>
+        <p>Content &copy; </p>
+        <p>Site designed using <a href="">Bootstrap</a> and <a href="">Flat UI</a>.
       </footer>
 
     </div><!--/.fluid-container-->
 
-    <script src="bower_components/jquery/jquery.js"></script>
+    <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
   </body>
 </html>
