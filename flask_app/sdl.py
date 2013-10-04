@@ -1,35 +1,55 @@
 import sqlite3
-from flask import Flask, request, session, g, redirect, url_for \
+from flask import Flask, request, session, g, redirect, url_for, \
     abort, render_template, flash
 from contextlib import closing
-import sqlalchemy
 
 #config
+DATABASE = '/tmp/sdl.db'
 DEBUG = True
-SECRET_KEY = 'True'
-USERNAME'development key'
-PASSWORD= 'admin'
-
-#dbs
-databases = {'events': '/tmp/events.db', 'people': '/tmp/people.db'}
-app.config['sqlalchemy_binds'] = databases
-db = SQLAlchemy(app)
+SECRET_KEY = 'development key'
+USERNAME = 'admin'
+PASSWORD= 'default'
 
 #start app
 app = Flask(__name__)
 app.config.from_object(__name__)
 
 #db connections
-def connect_events_db():
-    return sqlite3.connect(app.config['EVENTS_DB'])
+def connect_db():
+    return sqlite3.connect(app.config['DATABASE'])
 
-def connect_people_db():
-    return sqlite3.connect(app.config['PEOPLE_DB'])
+#setup database from within python
+def init_db():
+    with closing(connect_db()) as db:
+        with app.open_resource('schema.sql', mode='r') as f:
+            db.cursor().executescript(f.read())
+        db.commit()
+
 
 #handle db requests
 @app.before_request
 def before_request():
-    g.db = connect
+    g.db = connect_db()
+
+@app.teardown_request
+def teardown_request(exception):
+    db = getattr(g, 'db', None)
+    if db is not None:
+        db.close()
+
+
+#pages here---
+
+#main page: needs a stream of recent research and recent events
+@app.route('/')
+def draw_index():
+    #sets up a cursor to query the DB
+    cur = g.db.execute('select headline, content from events by time desc')
+    #makes a dictionary of headline: content
+    events = [dict(title=row[0], text=row[1]) for row in cur.fetchall()]
+    #renders that shit, passing the events events
+    return render_template('mainpage.html', events=events)
+
 
 #run app
 if __name__ == '__main__':

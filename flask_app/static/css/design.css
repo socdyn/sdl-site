@@ -1,0 +1,61 @@
+body {
+  padding-top: 80px;
+  padding-bottom: 40px;
+
+}
+
+.sidebar-nav {
+  padding: 9px 0;
+}
+.hero-unit {
+  background-image: url('http://placehold.it/900x200');
+  color: white;
+
+}
+.headline {
+  font-family: Orbitron;
+  font-size:92px;
+  padding-bottom: 2%;
+}
+.subheadline {
+  font-size: 27px;
+  padding-left: 2px;
+}
+.subheadline, .recent-pitch, p, .nav-text {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+.recent-header{
+  text-align: center;
+}
+.recent-img {
+  text-align:center;
+}
+.main, .hero {
+  max-width: 980px;
+  margin:auto;
+}
+.story {
+  padding-left: 2%;
+}
+.story:hover {
+  background: #ECF0F1;
+}
+.recent:hover {
+  background: #ECF0F1;
+}
+<!-- modifications to bootstrap elements -->
+.affix {
+  top: 50px;
+}
+
+@media (max-width: 980px) {
+  /* Enable use of floated navbar text */
+  .navbar-text.pull-right {
+    float: none;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+
+@media (max-width: 480px) {
+}
