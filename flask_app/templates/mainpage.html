@@ -2,23 +2,41 @@
 
 {% block title %}Home{% endblock %}
 
+{% block nav %}
+  <li class="active"><a class="nav-text" href="{{ url_for('draw_index') }}">Home</a></li>
+  <li><a class="nav-text" href="{{ url_for('draw_people') }}">People</a></li>
+  <li><a class="nav-text" href="{{ url_for('draw_research') }}">Research</a></li>
+  <li><a class="nav-text" href="{{ url_for('draw_events') }}">Events</a></li>
+  <li><a class="nav-text" href="{{ url_for('draw_resources') }}">Resources</a></li>
+{% endblock %}
 
-{%block nav %}
-
+{% block hero %}
+  <!-- headline hero image -->
+  <div class="container-fluid hero">
+    <div class="row-fluid">
+      <div class="span12">
+        <div class="hero-unit">
+          <div class="headline">SDL</div>
+          <h4 class="subheadline">Social Dynamics Lab</h4>
+        </div>
+      </div>
+    </div>
+  </div>
 {% endblock %}
 
 {% block content %}
   <!-- reads all the events from the events table in the DB and prints them here -->
   <div class="span9">
-    <div class="row-fluid">
 
-      {% for item in events %}
+    {% for item in events %}
+      <div class="row-fluid">
         <div class="span12 story">
-          <h2>{{ item.headline }}</h2>
-          <p>{{ item.description }}</p>
+          <h2>{{ item['title'] }}</h2>
+          <p>{{ item['text'] }}</p>
         </div>
-      {% endfor %}
-    </div>
+      </div>
+    {% endfor %}
+
   </div>
 
   <!--sidebar-->

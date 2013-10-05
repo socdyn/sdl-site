@@ -1,13 +1,13 @@
 {% extends "base_template.html" %}
 
-{% block title %}Events{% endblock %}
+{% block title %}Resources{% endblock %}
 
 {% block nav %}
   <li><a class="nav-text" href="{{ url_for('draw_index') }}">Home</a></li>
   <li><a class="nav-text" href="{{ url_for('draw_people') }}">People</a></li>
   <li><a class="nav-text" href="{{ url_for('draw_research') }}">Research</a></li>
-  <li class="active"><a class="nav-text" href="{{ url_for('draw_events') }}">Events</a></li>
-  <li><a class="nav-text" href="{{ url_for('draw_resources') }}">Resources</a></li>
+  <li><a class="nav-text" href="{{ url_for('draw_events') }}">Events</a></li>
+  <li class="active"><a class="nav-text" href="{{ url_for('draw_resources') }}">Resources</a></li>
 {% endblock %}
 
 {% block content %}
