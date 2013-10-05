@@ -77,6 +77,7 @@ def draw_people():
     #renders that shit, passing the events parameter the events we fetched
     return render_template('people.html', people=people)
 
+
 @app.route('/events')
 def draw_events():
     #sets up a cursor to query the DB
@@ -86,6 +87,7 @@ def draw_events():
     #renders that shit, passing the events parameter the events we fetched
     return render_template('events.html', events=events)
 
+
 @app.route('/resources')
 def draw_resources():
     #sets up a cursor to query the DB
@@ -94,6 +96,12 @@ def draw_resources():
     resources = [dict(title=row[0], text=row[1]) for row in cur.fetchall()]
     #renders that shit, passing the resources parameter the resources we fetched
     return render_template('resources.html', resources=resources)
+
+
+#@app.route('/edit')
+    
+
+#@app.route('/login')
 
 
 #run app
