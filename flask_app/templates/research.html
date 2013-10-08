@@ -1,6 +1,8 @@
 {% extends "base_template.html" %}
 
+
 {% block title %}Research{% endblock %}
+
 
 {% block nav %}
   <li><a class="nav-text" href="{{ url_for('draw_index') }}">Home</a></li>
@@ -9,6 +11,7 @@
   <li><a class="nav-text" href="{{ url_for('draw_events') }}">Events</a></li>
   <li><a class="nav-text" href="{{ url_for('draw_resources') }}">Resources</a></li>
 {% endblock %}
+
 
 {% block content %}
   <!-- reads all the events from the events table in the DB and prints them here -->

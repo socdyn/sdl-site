@@ -964,7 +964,7 @@ h6 {
   -moz-box-shadow: none;
   box-shadow: none;
 }
-.navbar-inverse .nav > li.active + li > a {
+.navbar-inverse .nav > li.active + li > a {-co
   border-left: none;
   padding-left: 22px;
 }
