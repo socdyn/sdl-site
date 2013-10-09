@@ -69,6 +69,11 @@ p {
   background-color: black;
   width: 100%;
   height: 50px;
+  margin-top: 45px;
+}
+
+.sidebar-box {
+  padding-left: 5%;
 }
 
 /* CUSTOMIZE THE CAROUSEL
