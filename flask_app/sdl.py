@@ -47,13 +47,11 @@ def draw_index():
     cur = g.db.execute('select headline, description from research')
     #makes a dictionary of headline: content
     research = [dict(title=row[0], text=row[1]) for row in cur.fetchall()]
-    #renders that shit, passing the research parameter the research we fetched
 
     #sets up a cursor to query the DB
     cur = g.db.execute('select headline, description from events')
     #makes a dictionary of headline: content
     events = [dict(title=row[0], text=row[1]) for row in cur.fetchall()]
-    #renders that shit, passing the events parameter the events we fetched
 
     return render_template('mainpage.html', research=research, events=events)
 
@@ -64,7 +62,6 @@ def draw_research():
     cur = g.db.execute('select headline, description from research')
     #makes a dictionary of headline: content
     research = [dict(title=row[0], text=row[1]) for row in cur.fetchall()]
-    #renders that shit, passing the research parameter the research we fetched
     return render_template('research.html', research=research)
 
 
@@ -74,7 +71,6 @@ def draw_people():
     cur = g.db.execute('select headline, description from people')
     #makes a dictionary of headline: content
     people = [dict(title=row[0], text=row[1]) for row in cur.fetchall()]
-    #renders that shit, passing the events parameter the events we fetched
     return render_template('people.html', people=people)
 
 
@@ -84,7 +80,6 @@ def draw_events():
     cur = g.db.execute('select headline, description from events')
     #makes a dictionary of headline: content
     events = [dict(title=row[0], text=row[1]) for row in cur.fetchall()]
-    #renders that shit, passing the events parameter the events we fetched
     return render_template('events.html', events=events)
 
 
@@ -94,7 +89,6 @@ def draw_resources():
     cur = g.db.execute('select headline, description from resources')
     #makes a dictionary of headline: content
     resources = [dict(title=row[0], text=row[1]) for row in cur.fetchall()]
-    #renders that shit, passing the resources parameter the resources we fetched
     return render_template('resources.html', resources=resources)
 
 
