@@ -27,7 +27,7 @@ def get_first_projects(text, n):
 
 @app.route('/')
 def draw_index():
-    with open('pages/greeting.md', 'rb') as f:
+    with open('content/greeting.md', 'rb') as f:
         greeting = markdown(f.read())
     #with open('recent.md', 'rb') as g:
     #    recent = get_first_research(f.read(), n)
@@ -36,21 +36,21 @@ def draw_index():
 
 @app.route('/people')
 def draw_people():
-    with open('pages/people.md', 'rb') as f:
+    with open('content/people.md', 'rb') as f:
         people = markdown(f.read())
     return render_template('people.html', people=people)
 
 @app.route('/research')
 def draw_research():
-    with open('pages/research.md', 'rb') as f:
+    with open('content/research.md', 'rb') as f:
         research = markdown(f.read())
     return render_template('research.html', research=research)
 
 @app.route('/contact')
 def draw_contact():
-    with open('pages/contact.md', 'rb') as f:
-        research = markdown(f.read())
-    return render_template('contact.html', research=research)
+    with open('content/contact.md', 'rb') as f:
+        contact = markdown(f.read())
+    return render_template('contact.html', contact=contact)
 
 
 #run app
