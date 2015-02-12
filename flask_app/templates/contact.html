@@ -5,8 +5,8 @@
 
 {% block nav %}
   <li><a href="{{ url_for('draw_people') }}">People</a></li>
-  <li class="active"><a href="{{ url_for('draw_research') }}">Research<span class="sr-only">(current)</span></a></li>
-  <li><a href="{{ url_for('draw_contact') }}">Contact</a></li>
+  <li><a href="{{ url_for('draw_research') }}">Research</a></li>
+  <li class="active"><a href="{{ url_for('draw_contact') }}">Contact<span class="sr-only">(current)</span></a></li>
 {% endblock %}
 
 <!-- Hero -->
@@ -14,7 +14,7 @@
 <div class='container-fluid'>
   <div class="col-sm-10 col-md-10 col-lg-10 col-sm-offset-1 col-md-offset-1 col-lg-offset-1">
     <div class="page-header">
-      <h1>Research&nbsp;&nbsp;&nbsp;<small>active and past projects</small></h1>
+      <h1>Contact&nbsp;&nbsp;&nbsp;<small>drop us a line</small></h1>
     </div>
   </div>
 </div>
@@ -22,7 +22,7 @@
 
 {% block content %}
 <div class="container-fluid">
-  <!-- research info -->
+  <!-- contact info -->
   <div class="col-sm-8 col-md-8 col-lg-8 col-sm-offset-2 col-md-offset-2 col-lg-offset-2">
     data here
   </div>
