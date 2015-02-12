@@ -21,17 +21,19 @@ app = Flask(__name__)
 app.config.from_object(__name__)
 #app.jinja_env.globals.update(markdown=markdown)
 
-#returns first n projects for sidebar display
-def get_first_projects(text, n):
-    pass
+
+
+
+
+#routing behavior below here
 
 @app.route('/')
 def draw_index():
     with open('content/greeting.md', 'rb') as f:
         greeting = markdown(f.read())
-    #with open('recent.md', 'rb') as g:
-    #    recent = get_first_research(f.read(), n)
-    return render_template('mainpage.html', greeting=greeting) #, recent=recent)
+    with open('content/recent.md', 'rb') as g:
+        recent = markdown(g.read())
+    return render_template('mainpage.html', greeting=greeting, recent=recent)
 
 
 @app.route('/people')
