@@ -11,21 +11,30 @@
 
 <!-- Hero -->
 {% block hero %}
-<div class='container-fluid'>
-  <img class='center-block' src="{{ url_for('static', filename='media/new_sdl_logo.png') }}">
+<div class="jumbotron">
+  <div class="container">
+    <h1>SDL&nbsp;&nbsp;<small>Social Dynamics Lab</small></h1>
+  </div>
 </div>
 {% endblock %}
 
 {% block content %}
 <div class="container-fluid">
   <!-- lab info-->
-  <div class="col-sm-6 col-md-6 col-lg-6 col-sm-offset-2 col-md-offset-2 col-lg-offset-2">
+  <div class="col-sm-10 col-md-5 col-lg-5 col-sm-offset-1 col-md-offset-1 col-lg-offset-1">
     {{greeting|safe}}
   </div>
 
   <!--sidebar-->
-  <div class="col-sm-2 col-md-2 col-lg-2">
-    {{recent|safe}}
+  <div class="col-sm-8 col-md-4 col-lg-4 col-sm-offset-2 col-md-offset-1 col-lg-offset-1 recent">
+    <div class="panel panel-primary">
+      <div class="panel-heading">
+        <h3 class="panel-title">Recents</h3>
+      </div>
+      <div class="panel-body">
+        {{recent|safe}}
+      </div>
+    </div>
   </div>
 </div>
 {% endblock %}

@@ -23,3 +23,17 @@
 ####Projects
 
    Controversial hashtags on Twitter
+
+~~~
+
+### Patrick Park
+
+~nothing~
+
+####Interests
+
+   Global social networks
+
+####Projects
+
+   Economic returns to social networks

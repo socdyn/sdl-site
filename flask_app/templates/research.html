@@ -23,8 +23,25 @@
 {% block content %}
 <div class="container-fluid">
   <!-- research info -->
-  <div class="col-sm-6 col-md-6 col-lg-6 col-sm-offset-3 col-md-offset-3 col-lg-offset-3">
-    data here
+  <div class="col-sm-8 col-md-8 col-lg-8 col-sm-offset-2 col-md-offset-2 col-lg-offset-2">
+    {% for idea in research %}
+      <div class="col-sm-12 col-md-12 col-lg-12">
+        <div class="panel panel-default well">
+          <div class="panel-body">
+            <div class="media">
+              {% if idea.picture != 'nothing' %}
+                <div class="media-left media-middle">
+                  <img class="thumbnail" src="{{ url_for('static', filename='media/people/{}'.format(idea.picture)) }}">
+                </div>
+              {% endif %}
+              <div class="media-body">
+                {{idea.md|safe}}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    {% endfor %}
   </div>
 </div>
 {% endblock %}

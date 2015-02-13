@@ -57,7 +57,7 @@ def draw_people():
 @app.route('/research')
 def draw_research():
     with open('content/research.md', 'rb') as f:
-        research = markdown(f.read())
+        research = preprocess_markdown(f.read())
     return render_template('research.html', research=research)
 
 @app.route('/contact')

@@ -1,3 +1,10 @@
+.recent {
+    padding-top:25px;
+}
+
+.jumbotron {
+    height: 220px;
+}
 .centered-hero {
     display: block;
     margin-left: auto;

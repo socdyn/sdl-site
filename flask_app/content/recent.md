@@ -1,5 +1,3 @@
-###Recent
-
 ####Date - Project
 
 Description
