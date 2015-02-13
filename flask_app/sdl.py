@@ -3,10 +3,9 @@
 @Cornell Dpt of Sociology (Social Dynamics Lab)
 @Feb 2015
 '''
-import sqlite3
+import re
 from markdown2 import markdown
-from flask import Flask, request, session, g, redirect, url_for, \
-    abort, render_template, flash
+from flask import Flask, url_for, render_template
 from contextlib import closing
 
 #config
@@ -22,8 +21,21 @@ app.config.from_object(__name__)
 #app.jinja_env.globals.update(markdown=markdown)
 
 
+#splits on ~~~
+#creates "cards" for each person consisting of a picture and some text
+#finds picture path in ~tildes.png~
+#returns [(picture_path, markdown), ...]
+def preprocess_markdown(md):
+    individuals = md.split('\n\n~~~\n\n')
+    cards = []
 
+    for indv_md in individuals:
+        picture_path = re.findall(r'~.*~', indv_md)[0]
+        correct_markdown = indv_md.replace('{}\n\n'.format(picture_path), '')
+        picture_path = picture_path.strip('~')
+        cards.append({"picture": picture_path, "md": markdown(correct_markdown)})
 
+    return cards
 
 #routing behavior below here
 
@@ -39,7 +51,7 @@ def draw_index():
 @app.route('/people')
 def draw_people():
     with open('content/people.md', 'rb') as f:
-        people = markdown(f.read())
+        people = preprocess_markdown(f.read())
     return render_template('people.html', people=people)
 
 @app.route('/research')

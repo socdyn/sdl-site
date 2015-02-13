@@ -1,6 +1,6 @@
 ### Chris Cameron
 
-***
+~cameron.png~
 
 ####Interests
 
@@ -10,11 +10,11 @@
 
    Arab spring, Three degrees of influence
 
-***
+~~~
 
 ### George Berry
 
-***
+~berry.png~
 
 ####Interests
 
@@ -23,5 +23,3 @@
 ####Projects
 
    Controversial hashtags on Twitter
-
-
