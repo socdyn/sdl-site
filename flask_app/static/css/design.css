@@ -3,8 +3,10 @@
 }
 
 .jumbotron {
-    height: 220px;
+    height: 230px;
+    margin-top: -20px;
 }
+
 .centered-hero {
     display: block;
     margin-left: auto;
