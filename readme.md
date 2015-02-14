@@ -29,4 +29,10 @@ Flask does three things:
 
 ### Bootstrap
 
-Bootstrap makes life easier by easily allowing responsive design, scaling the page for phones/tablets/pcs. 
+Bootstrap makes life easier by easily allowing responsive design, scaling the page for phones/tablets/pcs. The column widths are specified in the `.html` template files in `flask_app/templates`. 
+
+These aren't true `.html` files, but Jinja2 templates that Flask converts to proper `.html` files to serve when a request comes in. 
+
+`base_template.html` contains the boilerplate: CSS and JS imports, the basic navbar design, and placement for child templates to insert items.
+
+All other templates inherit from `base_template.html` and put their own content in the appropriate slots in the base template.
