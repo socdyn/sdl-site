@@ -23,6 +23,10 @@
 
 }
 
+footer {
+    margin-top: 25px;
+}
+
 .centered-hero {
     display: block;
     margin-left: auto;
