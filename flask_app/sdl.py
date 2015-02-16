@@ -3,42 +3,43 @@
 @Cornell Dpt of Sociology (Social Dynamics Lab)
 @Feb 2015
 '''
+
 import re
 from markdown2 import markdown
 from flask import Flask, url_for, render_template
-from contextlib import closing
+
 
 #config
-#DATABASE = 'sdl.db'
 DEBUG = True
 SECRET_KEY = 'development key'
 USERNAME = 'admin'
 PASSWORD = 'default'
 
-#start app
+
+#make app
 app = Flask(__name__)
 app.config.from_object(__name__)
-#app.jinja_env.globals.update(markdown=markdown)
 
 
-#splits on ~~~
-#creates "cards" for each person consisting of a picture and some text
-#finds picture path in ~tildes.png~
-#returns [(picture_path, markdown), ...]
+#processing function
 def preprocess_markdown(md):
+    '''
+    splits on ~~~
+    creates "cards" for each person consisting of a picture and some text
+    finds picture path in ~tildes.png~
+    returns [{'picture':picture, 'md':markdown},...]
+    '''
     individuals = md.split('\n\n~~~\n\n')
     cards = []
-
     for indv_md in individuals:
         picture_path = re.findall(r'~.*~', indv_md)[0]
         correct_markdown = indv_md.replace('{}\n\n'.format(picture_path), '')
         picture_path = picture_path.strip('~')
         cards.append({"picture": picture_path, "md": markdown(correct_markdown)})
-
     return cards
 
-#routing behavior below here
 
+#routing behavior here
 @app.route('/')
 def draw_index():
     with open('content/greeting.md', 'rb') as f:
@@ -46,7 +47,6 @@ def draw_index():
     with open('content/recent.md', 'rb') as g:
         recent = markdown(g.read())
     return render_template('mainpage.html', greeting=greeting, recent=recent)
-
 
 @app.route('/people')
 def draw_people():
