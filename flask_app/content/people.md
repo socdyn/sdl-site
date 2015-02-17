@@ -1,20 +1,6 @@
-### Chris Cameron
-
-&grad&
-
-~cameron.png~
-
-####Interests
-
-   Fixing bugs, Networks
-
-####Projects
-
-   Arab spring, Three degrees of influence
-
-~~~
-
 ### George Berry
+
+###### Sociology
 
 &grad&
 
@@ -24,42 +10,114 @@
 
    Contagion, Social Norms
 
-####Projects
-
-   Controversial hashtags on Twitter
-
 ~~~
 
-### Patrick Park
+### [Chris Cameron](https://confluence.cornell.edu/display/~cjc73)
+
+###### Sociology
 
 &grad&
 
-~nothing~
+~ChrisCameron.jpeg~
 
 ####Interests
 
-   Global social networks
-
-####Projects
-
-   Economic returns to social networks
+Social Networks, Economic Sociology, Social Simulation, Agent Based Modeling, Coordination, Cooperation, Collective Action
 
 ~~~
 
-### Caleb Koch
+### [Scott Golder](http://www.redlog.net)
 
-&undergrad&
+###### Sociology
 
-~nothing~
+&grad&
 
-asdf
+~ScottGolder.jpeg~
+
+####Interests
+
+Social Networks, Quantitative Methods, Norms, Economic Sociology, Organizations, Information and Communication Technologies
 
 ~~~
 
-### Michael Macy
+### [Milena Tsvetkova](https://sites.google.com/site/milenavenelinova/)
+
+###### Sociology
+
+&grad&
+
+~MilenaTsvetkova.png~
+
+####Interests
+
+Social Networks, Complex Systems, Agent-Based Modeling, Organizations
+
+~~~
+
+### [Patrick Park](None)
+
+###### Sociology
+
+&grad&
+
+~PatrickPark.jpeg~
+
+####Interests
+
+Agent Based Modeling, Online Social Networks, Online Collective Action, Quantitative Methods
+
+~~~
+
+### [Yongren Shi](None)
+
+###### Sociology
+
+&grad&
+
+~shi_y.png~
+
+####Interests
+
+Intergroup Conflict and Norm Enforcement, Social Networks, Agent Based Modeling
+
+~~~
+
+### [Fedor Dokshin](None)
+
+###### Sociology
+
+&grad&
+
+~FedorDokshin.jpeg~
+
+####Interests
+
+Collective Action, Social Networks, Economic Sociology, Social Dilemnas, Cooperation, Trust
+
+~~~
+
+### [Noona Oh](None)
+
+###### Sociology
+
+&grad&
+
+~NoonaOh.jpeg~
+
+####Interests
+
+Social Networks, Online Communities, Social Psychology, Social Movements, Organizations
+
+~~~
+
+### [Michael Macy](http://hsd.soc.cornell.edu/mwm/)
+
+###### Sociology and Information Science
 
 &faculty&
 
-~nothing~
+~MichaelMacy.png~
 
-asdf
+####Interests
+
+Game Theory, Networks, Social Psychology, Collective Action
