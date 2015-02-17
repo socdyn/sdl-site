@@ -1,5 +1,7 @@
 ### Chris Cameron
 
+&grad&
+
 ~cameron.png~
 
 ####Interests
@@ -13,6 +15,8 @@
 ~~~
 
 ### George Berry
+
+&grad&
 
 ~berry.png~
 
@@ -28,6 +32,8 @@
 
 ### Patrick Park
 
+&grad&
+
 ~nothing~
 
 ####Interests
@@ -41,6 +47,18 @@
 ~~~
 
 ### Caleb Koch
+
+&grad&
+
+~nothing~
+
+asdf
+
+~~~
+
+### Michael Macy
+
+&faculty&
 
 ~nothing~
 

@@ -23,23 +23,70 @@
 {% block content %}
 <div class="container-fluid">
   <!-- people info -->
+  <!-- 3 categories: prof, grad, undergrad -->
   <div class="col-sm-8 col-md-10 col-lg-10 col-sm-offset-2 col-md-offset-1 col-lg-offset-1">
-    {% for person in people %}
-      <div class="col-sm-12 col-md-6 col-lg-6">
+    <div class="page-header">
+      <h2>Faculty</h2>
+    </div>
+    {% for prof in people.faculty %}
+      <div class="col-sm-12 col-md-12 col-lg-12">
         <div class="media well">
           <div class="media-left media-middle">
-            {% if person.picture != 'nothing' %}
-              <img class="thumbnail" src="{{ url_for('static', filename='media/people/{}'.format(person.picture)) }}">
+            {% if prof.picture != 'nothing' %}
+              <img class="thumbnail" src="{{ url_for('static', filename='media/people/{}'.format(prof.picture)) }}">
             {% else %}
               <img class="thumbnail" src="http://placehold.it/100x100">
             {% endif %}
           </div>
           <div class="media-body">
-            {{person.md|safe}}
+            {{prof.md|safe}}
           </div>
         </div>
       </div>
     {% endfor %}
   </div>
-</div>
+
+  <div class="col-sm-8 col-md-10 col-lg-10 col-sm-offset-2 col-md-offset-1 col-lg-offset-1">
+    <div class="page-header">
+      <h2>Graduate Students</h2>
+    </div>
+    {% for grad_student in people.grad %}
+      <div class="col-sm-12 col-md-6 col-lg-6">
+        <div class="media well">
+          <div class="media-left media-middle">
+            {% if grad_student.picture != 'nothing' %}
+              <img class="thumbnail" src="{{ url_for('static', filename='media/people/{}'.format(grad_student.picture)) }}">
+            {% else %}
+              <img class="thumbnail" src="http://placehold.it/100x100">
+            {% endif %}
+          </div>
+          <div class="media-body">
+            {{grad_student.md|safe}}
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+
+  <div class="col-sm-8 col-md-10 col-lg-10 col-sm-offset-2 col-md-offset-1 col-lg-offset-1">
+    <div class="page-header">
+      <h2>Undergraduate Students</h2>
+    </div>
+    {% for undergrad_student in people.undergrad %}
+      <div class="col-sm-12 col-md-6 col-lg-6">
+        <div class="media well">
+          <div class="media-left media-middle">
+            {% if undergrad_student.picture != 'nothing' %}
+              <img class="thumbnail" src="{{ url_for('static', filename='media/people/{}'.format(undergrad_student.picture)) }}">
+            {% else %}
+              <img class="thumbnail" src="http://placehold.it/100x100">
+            {% endif %}
+          </div>
+          <div class="media-body">
+            {{undergrad_student.md|safe}}
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+
 {% endblock %}

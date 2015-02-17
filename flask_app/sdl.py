@@ -22,6 +22,7 @@ app.config.from_object(__name__)
 
 
 #processing function
+
 def preprocess_markdown(md):
     '''
     splits on ~~~
@@ -30,12 +31,15 @@ def preprocess_markdown(md):
     returns [{'picture':picture, 'md':markdown},...]
     '''
     individuals = md.split('\n\n~~~\n\n')
-    cards = []
+    cards = {'grad': [], 'faculty': [], 'undergrad': []}
     for indv_md in individuals:
         picture_path = re.findall(r'~.*~', indv_md)[0]
+        category = re.findall(r'&.*&', indv_md)[0]
         correct_markdown = indv_md.replace('{}\n\n'.format(picture_path), '')
+        correct_markdown = correct_markdown.replace('{}\n\n'.format(category), '')
         picture_path = picture_path.strip('~')
-        cards.append({"picture": picture_path, "md": markdown(correct_markdown)})
+        category = category.strip('&')
+        cards[category].append({"picture": picture_path, "md": markdown(correct_markdown)})
     return cards
 
 
