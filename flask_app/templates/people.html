@@ -50,10 +50,15 @@
     <div class="page-header">
       <h2>Graduate Students</h2>
     </div>
-    {% for grad_student in people.grad %}
+    {% for i, grad_student in enumerate(people.grad) %}
+
+      {% if i % 2 == 0 %}
+      <div class="row">
+      {% endif %}
+
       <div class="col-sm-12 col-md-6 col-lg-6">
-        <div class="media well">
-          <div class="media-left media-middle">
+        <div class="media well cards">
+          <div class="media-left media-top">
             {% if grad_student.picture != 'nothing' %}
               <img class="thumbnail" src="{{ url_for('static', filename='media/people/{}'.format(grad_student.picture)) }}">
             {% else %}
@@ -65,6 +70,11 @@
           </div>
         </div>
       </div>
+
+      {% if i % 2 == 1 %}
+      </div>
+      {% endif %}
+
     {% endfor %}
   </div>
 

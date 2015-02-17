@@ -19,6 +19,8 @@ PASSWORD = 'default'
 #make app
 app = Flask(__name__)
 app.config.from_object(__name__)
+app.jinja_env.globals.update(enumerate=enumerate)
+
 
 
 #processing function

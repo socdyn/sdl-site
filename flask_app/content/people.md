@@ -8,7 +8,7 @@
 
 ####Interests
 
-   Contagion, Social Norms
+   Computational Sociology, Social Networks, Online Interaction, Social Norms
 
 ~~~
 
