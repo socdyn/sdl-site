@@ -48,7 +48,7 @@
 
 ### Caleb Koch
 
-&grad&
+&undergrad&
 
 ~nothing~
 
