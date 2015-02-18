@@ -24,13 +24,13 @@
 <div class="container-fluid">
   <!-- people info -->
   <!-- 3 categories: prof, grad, undergrad -->
-  <div class="col-sm-8 col-md-10 col-lg-10 col-sm-offset-2 col-md-offset-1 col-lg-offset-1">
+  <div class="col-sm-8 col-md-8 col-lg-10 col-sm-offset-2 col-md-offset-2 col-lg-offset-1">
     <div class="page-header">
       <h2>Faculty</h2>
     </div>
     {% for prof in people.faculty %}
       <div class="col-sm-12 col-md-12 col-lg-12">
-        <div class="media well">
+        <div class="media well person-well">
           <div class="media-left media-middle">
             {% if prof.picture != 'nothing' %}
               <img class="thumbnail" src="{{ url_for('static', filename='media/people/{}'.format(prof.picture)) }}">
@@ -46,7 +46,7 @@
     {% endfor %}
   </div>
 
-  <div class="col-sm-8 col-md-10 col-lg-10 col-sm-offset-2 col-md-offset-1 col-lg-offset-1">
+  <div class="col-sm-8 col-md-8 col-lg-10 col-sm-offset-2 col-md-offset-2 col-lg-offset-1">
     <div class="page-header">
       <h2>Graduate Students</h2>
     </div>
@@ -56,17 +56,17 @@
       <div class="row">
       {% endif %}
 
-      <div class="col-sm-12 col-md-6 col-lg-6">
-        <div class="media well cards">
-          <div class="media-left media-top">
-            {% if grad_student.picture != 'nothing' %}
-              <img class="thumbnail" src="{{ url_for('static', filename='media/people/{}'.format(grad_student.picture)) }}">
-            {% else %}
-              <img class="thumbnail" src="http://placehold.it/100x100">
-            {% endif %}
-          </div>
-          <div class="media-body">
-            {{grad_student.md|safe}}
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
+        <div class="well person-well">
+          <div class="row">
+            <div class="row-same-height">
+              <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 same-height-pic">
+                <img class="thumbnail" src="{{ url_for('static', filename='media/people/{}'.format(grad_student.picture)) }}">
+              </div>
+              <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 same-height-text">
+              {{grad_student.md|safe}}
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -78,7 +78,7 @@
     {% endfor %}
   </div>
 
-  <div class="col-sm-8 col-md-10 col-lg-10 col-sm-offset-2 col-md-offset-1 col-lg-offset-1">
+  <div class="col-sm-8 col-md-8 col-lg-10 col-sm-offset-2 col-md-offset-2 col-lg-offset-1">
     <div class="page-header">
       <h2>Undergraduate Students</h2>
     </div>

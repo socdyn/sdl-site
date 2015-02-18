@@ -2,29 +2,61 @@
     padding-top:25px;
 }
 
+.header {
+    margin-left: 0px;
+    padding-left: 0px;
+}
+
 .headline {
     font-family: orbitron;
-    font-size: 88px;
+    font-size: 94px;
     color: #539BD6;
+    letter-spacing: 0.07em;
+    margin-left:-4px;
 }
 
 .embellish {
-    font-size: 17px;
+    font-size: 19px;
     color: #F8F8F8 ;
-    margin-top: -20px;
+    margin-top: -35px;
 }
 
-.vcent {
+.row-same-height {
+    display: table;
+    width: 100%;
+    height: 180px;
+}
+
+.same-height-pic {
+    display: table-cell;
+    float: none !important;
+    text-align: center;
+    padding-top: 5%;
+}
+
+.same-height-text {
+    display: table-cell;
+    float: none !important;
     vertical-align: middle;
-    float: none;
+    padding-left: 0px;
+    padding-right: 0px;
+    position:absolute;
 }
 
-.cards {
-    height:220px;
+.head-container{
+    padding-top: 17px;
 }
 
-.media-body {
-    margin-top: -10px;
+.well {
+    background-color: #E3EBF3;
+}
+
+.person-well {
+    height:210px;
+}
+
+.media {
+    vertical-align: middle;
 }
 
 .jumbotron {
@@ -47,16 +79,16 @@ footer {
 
 /* navbar */
 .navbar-default {
-    background-color: #F8F8F8;
-    border-color: #E7E7E7;
+    background-color: #E3EBF3;
+    border-color: #E3EBF3;
 }
 /* title */
 .navbar-default .navbar-brand {
-    color: #539BD6;
+    color: #777;
 }
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus {
-    color: #5E5E5E;
+    color: #0598EE;
 }
 /* link */
 .navbar-default .navbar-nav > li > a {
@@ -70,7 +102,7 @@ footer {
 .navbar-default .navbar-nav > .active > a:hover, 
 .navbar-default .navbar-nav > .active > a:focus {
     color: #555;
-    background-color: #E7E7E7;
+    background-color: white;
 }
 .navbar-default .navbar-nav > .open > a, 
 .navbar-default .navbar-nav > .open > a:hover, 
