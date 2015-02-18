@@ -48,7 +48,7 @@
 }
 
 .well {
-    background-color: #E3EBF3;
+    background-color: #F3F5F8;
 }
 
 .person-well {
@@ -102,7 +102,7 @@ footer {
 .navbar-default .navbar-nav > .active > a:hover, 
 .navbar-default .navbar-nav > .active > a:focus {
     color: #555;
-    background-color: white;
+    background-color: #F7F7F8;
 }
 .navbar-default .navbar-nav > .open > a, 
 .navbar-default .navbar-nav > .open > a:hover, 
