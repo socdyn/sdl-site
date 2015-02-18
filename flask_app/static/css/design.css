@@ -37,10 +37,8 @@
 .same-height-text {
     display: table-cell;
     float: none !important;
-    vertical-align: middle;
+    vertical-align: top;
     padding-left: 0px;
-    padding-right: 0px;
-    position:absolute;
 }
 
 .head-container{
