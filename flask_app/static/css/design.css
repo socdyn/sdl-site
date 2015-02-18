@@ -5,7 +5,7 @@
 .headline {
     font-family: orbitron;
     font-size: 88px;
-    color: #F8F8F8;
+    color: #539BD6;
 }
 
 .embellish {
@@ -52,7 +52,7 @@ footer {
 }
 /* title */
 .navbar-default .navbar-brand {
-    color: #777;
+    color: #539BD6;
 }
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus {
