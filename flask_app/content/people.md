@@ -18,7 +18,7 @@
 
 &grad&
 
-~ChrisCameron.jpeg~
+~ChrisCameron.png~
 
 ####Interests
 
