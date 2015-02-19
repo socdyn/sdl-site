@@ -31,10 +31,32 @@
     display: table-cell;
     float: none !important;
     text-align: center;
-    padding-top: 5%;
+    padding-top: 23px;
+}
+
+.same-height-pic-faculty {
+    display: table-cell;
+    float: none !important;
+    text-align: center;
+    padding-top: 2%;
+    padding-left: 40px;
+    padding-right: 0px;
+
+}
+
+.token {
+    display: table-cell;
+    float: none !important;
 }
 
 .same-height-text {
+    display: table-cell;
+    float: none !important;
+    vertical-align: top;
+    padding-left: 0px;
+}
+
+.same-height-text-faculty {
     display: table-cell;
     float: none !important;
     vertical-align: top;
