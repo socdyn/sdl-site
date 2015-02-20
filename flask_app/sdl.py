@@ -16,7 +16,7 @@ DEBUG = True
 #make app
 app = Flask(__name__)
 app.config.from_object(__name__)
-app.jinja_env.globals.update(enumerate=enumerate)
+app.jinja_env.globals.update(enumerate=enumerate, len=len)
 
 
 
@@ -30,7 +30,7 @@ def preprocess_people(md):
     returns [{'picture':picture, 'md':markdown},...]
     '''
     individuals = md.split('\n\n~~~\n\n')
-    cards = {'grad': [], 'faculty': [], 'undergrad': []}
+    cards = {'grad': [], 'faculty': [], 'undergrad': [], 'former': []}
     for indv_md in individuals:
         try:
             picture_path = re.findall(r'~.*~', indv_md)[0]

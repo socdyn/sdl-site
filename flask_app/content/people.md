@@ -189,7 +189,7 @@ Social Networks, Games on Networks, Behavioral Economics
 
 ### [Milena Tsvetkova](https://sites.google.com/site/milenavenelinova/)
 
-&former&
+&grad&
 
 ~MilenaTsvetkova.png~
 
@@ -210,6 +210,7 @@ Social Networks, Complex Systems, Agent-Based Modeling, Organizations
 Diffusion, Online Communities, Large-Scale Data Analysis, Network Models, Agent-Based Modeling, Web Data
 
 ~~~
+
 ### Matthew Hoffberg
 
 &former&
@@ -243,8 +244,3 @@ Large Scale Networks, Information Diffusion, Network Algorithms, Language Techno
 ###### Sociology
 
 Collective Action, Game Theory, Network Dynamics, Social Psychology, Blau-Space Modeling, Queuing Theory
-
-~~~
-
-
-
