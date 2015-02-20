@@ -75,6 +75,8 @@ Economic Sociology; Social Networks; Collective Behavior: Opinions, Attitudes, a
 
 &grad&
 
+~wei_dong.png~
+
 ###### wd96 &#8226; Information Science
 
 Cross-cultural comparison on social network structures, mental representation of social relations and social networks
@@ -127,28 +129,6 @@ Social Networks, Social Psychology, Computational and Quantitative Methods
 
 ~~~
 
-###  Tom Davidson
-
-&grad&
-
-~TDavidson.png~
-
-###### trd54 &#8226; Sociology
-
-Social Network Analysis, Online Social Networks, Sociology of Culture, Political Sociology
-
-~~~
-
-### Mario Molina
-
-&grad&
-
-###### mm2535 &#8226; Sociology
-
-Social Norms, Economic Sociology, Networks, Social Institutions, Experiments
-
-~~~
-
 ### Dana Warmsley
 
 &grad&
@@ -171,9 +151,35 @@ Complex systems and nonlinear dynamics, game theory, evolution of cooperation
 
 ~~~
 
+###  Tom Davidson
+
+&grad&
+
+~TDavidson.png~
+
+###### trd54 &#8226; Sociology
+
+Social Network Analysis, Online Social Networks, Sociology of Culture, Political Sociology
+
+~~~
+
+### Mario Molina
+
+&grad&
+
+~unknown.png~
+
+###### mm2535 &#8226; Sociology
+
+Social Norms, Economic Sociology, Networks, Social Institutions, Experiments
+
+~~~
+
 ### Fernando Plascencia
 
 &grad&
+
+~unknown.png~
 
 ##### jp975 &#8226; Department of City and Regional Planning
 
