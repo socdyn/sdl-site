@@ -11,9 +11,6 @@ from flask import Flask, url_for, render_template
 
 #config
 DEBUG = True
-SECRET_KEY = 'development key'
-USERNAME = 'admin'
-PASSWORD = 'default'
 
 
 #make app
@@ -25,7 +22,7 @@ app.jinja_env.globals.update(enumerate=enumerate)
 
 #processing function
 
-def preprocess_markdown(md):
+def preprocess_people(md):
     '''
     splits on ~~~
     creates "cards" for each person consisting of a picture and some text
@@ -47,6 +44,25 @@ def preprocess_markdown(md):
             print e
     return cards
 
+def preprocess_research(md):
+    '''
+    splits on ~~~
+    creates "cards" for each person consisting of a picture and some text
+    finds picture path in ~tildes.png~
+    returns [{'picture':picture, 'md':markdown},...]
+    '''
+    individuals = md.split('\n\n~~~\n\n')
+    cards = []
+    for indv_md in individuals:
+        try:
+            picture_path = re.findall(r'~.*~', indv_md)[0]
+            correct_markdown = indv_md.replace('{}\n\n'.format(picture_path), '')
+            picture_path = picture_path.strip('~')
+            cards.append({"picture": picture_path, "md": markdown(correct_markdown)})
+        except Exception as e:
+            print e
+    return cards
+
 
 #routing behavior here
 @app.route('/')
@@ -60,13 +76,13 @@ def draw_index():
 @app.route('/people')
 def draw_people():
     with open('content/people.md', 'rb') as f:
-        people = preprocess_markdown(f.read())
+        people = preprocess_people(f.read())
     return render_template('people.html', people=people)
 
 @app.route('/research')
 def draw_research():
     with open('content/research.md', 'rb') as f:
-        research = preprocess_markdown(f.read())
+        research = preprocess_research(f.read())
     return render_template('research.html', research=research)
 
 @app.route('/contact')
