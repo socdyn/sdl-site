@@ -167,3 +167,14 @@ footer {
         color: #333;
     }
 }
+
+/* panel coloring */
+.panel-default > .panel-heading {
+    color: #333;
+    background-color: #E3EBF3;
+    border-color: #E3EBF3;
+}
+
+.panel {
+    border-color: #E3EBF3;
+}
