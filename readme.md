@@ -13,7 +13,7 @@ I've added a couple of modifications to markdown to make our lives easier.
 
 See markdown files in `flask_app/content` for examples of both of these. Nobody needs to edit HTML, just these easy to read `.md` files, which are parsed and formatted properly on the site.
 
-## Backend
+## Under the Hood
 
 Made using [Bootstrap](http://twitter.github.io/bootstrap/) and [Flask](http://flask.pocoo.org/).
 
