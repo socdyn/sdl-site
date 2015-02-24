@@ -7,7 +7,7 @@
 import re
 from markdown2 import markdown
 from flask import Flask, url_for, render_template
-
+from random import shuffle
 
 #config
 DEBUG = True
@@ -16,7 +16,7 @@ DEBUG = True
 #make app
 app = Flask(__name__)
 app.config.from_object(__name__)
-app.jinja_env.globals.update(enumerate=enumerate, len=len)
+#app.jinja_env.globals.update(enumerate=enumerate, len=len)
 
 
 
@@ -42,6 +42,11 @@ def preprocess_people(md):
             cards[category].append({"picture": picture_path, "md": markdown(correct_markdown)})
         except Exception as e:
             print e
+
+    for k,v in cards.items():
+        if k != 'faculty':
+            shuffle(v)
+
     return cards
 
 def preprocess_research(md):
