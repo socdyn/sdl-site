@@ -42,8 +42,9 @@ Agent Based Modeling, Online Social Networks, Online Collective Action, Quantita
 
 ~shi_y.png~
 
+###### ys334 &#8226; Sociology
 
-Intergroup Conflict and Norm Enforcement, Social Networks, Agent Based Modeling
+Social Networks, Organization and Ecology, Opinion Dynamics, Computational Social Science  
 
 ~~~
 
@@ -172,6 +173,18 @@ Social Network Analysis, Online Social Networks, Sociology of Culture, Political
 ###### mm2535 &#8226; Sociology
 
 Social Norms, Economic Sociology, Networks, Social Institutions, Experiments
+
+~~~
+
+### Juan David Robalino
+
+&grad&
+
+~~
+
+###### jr872 &#8226; Economics
+
+Social Influence, Behavioral Economics
 
 ~~~
 
