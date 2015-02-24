@@ -60,15 +60,15 @@ Social Networks, Quantitative Methods, Norms, Economic Sociology, Organizations,
 
 ~~~
 
-### Daniel DellaPosta
+### [Daniel DellaPosta](http://www.danieldellaposta.com/)
 
 &grad&
 
-~della_posta_d.png~
+~dan_della_posta.jpg~
 
 ###### djd264 &#8226; Sociology
  
-Economic Sociology; Social Networks; Collective Behavior: Opinions, Attitudes, and Social Influence
+Social Networks, Social Influence, Economic and Social Exchange, Computational Methods
 
 ~~~
 
