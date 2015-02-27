@@ -180,7 +180,7 @@ Social Norms, Economic Sociology, Networks, Social Institutions, Experiments
 
 &grad&
 
-~~
+~juan_david.png~
 
 ###### jr872 &#8226; Economics
 
@@ -252,7 +252,7 @@ Large Scale Networks, Information Diffusion, Network Algorithms, Language Techno
 
 &former&
 
-~MichaelGenkin.jpeg~
+~MichaelGenkin.png~
 
 ###### Sociology
 
@@ -260,7 +260,7 @@ Collective Action, Game Theory, Network Dynamics, Social Psychology, Blau-Space 
 
 ~~~
 
-### [Arnout van de Rijt] (http://www.stonybrook.edu/commcms/sociology/people/faculty/vanderijt.html)
+### [Arnout van de Rijt](http://www.stonybrook.edu/commcms/sociology/people/faculty/vanderijt.html)
 
 &former&
 
@@ -284,7 +284,7 @@ User engagement, Content Diffusion
 
 ~~~
 
-### [Robb Willer] (http://www.robbwiller.org)
+### [Robb Willer](http://www.robbwiller.org)
 
 &former&
 
@@ -296,7 +296,7 @@ Emergence of collective action, norms, solidarity, generosity, and status hierar
 
 ~~~
 
-### [Stephen Benard] (http://pages.iu.edu/~sbenard/Home.html)
+### [Stephen Benard](http://pages.iu.edu/~sbenard/Home.html)
 
 &former&
 
