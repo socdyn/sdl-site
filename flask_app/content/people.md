@@ -257,3 +257,60 @@ Large Scale Networks, Information Diffusion, Network Algorithms, Language Techno
 ###### Sociology
 
 Collective Action, Game Theory, Network Dynamics, Social Psychology, Blau-Space Modeling, Queuing Theory
+
+~~~
+
+### [Arnout van de Rijt] (http://www.stonybrook.edu/commcms/sociology/people/faculty/vanderijt.html)
+
+&former&
+
+~vanderijt.jpg~
+
+###### Sociology and Institute for Advanced Computational Science
+
+Social networks, cumulative advantage
+
+~~~
+
+### Thomas M. Lento
+
+&former&
+
+~lento.png~
+
+###### Facebook Data Science
+
+User engagement, Content Diffusion
+
+~~~
+
+### [Robb Willer] (http://www.robbwiller.org)
+
+&former&
+
+~willer.png~
+
+###### Sociology
+
+Emergence of collective action, norms, solidarity, generosity, and status hierarchies
+
+~~~
+
+### [Stephen Benard] (http://pages.iu.edu/~sbenard/Home.html)
+
+&former&
+
+~benard_s.png~
+
+###### Sociology
+
+Conflict and Inequality, Intergroup Conflict and Intragroup Relations, Reputation Systems and Competition, Agression and Status
+
+~~~
+
+
+
+
+
+
+
