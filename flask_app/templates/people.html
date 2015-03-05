@@ -14,7 +14,7 @@
 <div class='container-fluid'>
   <div class="col-sm-10 col-md-10 col-lg-10 col-sm-offset-1 col-md-offset-1 col-lg-offset-1">
     <div class="page-header">
-      <h1>People&nbsp;&nbsp;<small>current members</small></h1>
+      <h1>People&nbsp;&nbsp;<small>current and former</small></h1>
     </div>
   </div>
 </div>
@@ -23,40 +23,14 @@
 {% block content %}
 <div class="container-fluid">
   <!-- people info -->
-  <!-- 3 categories: prof, grad, undergrad -->
+  <!-- 2 categories: current and former -->
+  
+  <!-- current students -->
   <div class="col-sm-10 col-md-8 col-lg-10 col-sm-offset-1 col-md-offset-2 col-lg-offset-1">
     <div class="page-header">
-      <h2>Faculty</h2>
+      <h2>Current Members</h2>
     </div>
-    {% for prof in people.faculty %}
-      <div class="row">
-        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-10 col-lg-offset-1">
-          <div class="well person-well">
-            <div class="row">
-              <div class="row-same-height">
-                <div class="col-lg-1 hidden-sm hidden-md hidden-xs token">
-                </div>
-                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-1 same-height-pic">
-                  <img class="thumbnail" src="{{ url_for('static', filename='media/people/{}'.format(prof.picture)) }}">
-                </div>
-                <div class="col-xs-8 col-sm-8 col-md-8 col-lg-7 same-height-text">
-                {{prof.md|safe}}
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    {% endfor %}
-  </div>
-
-
-  <!-- grad students -->
-  <div class="col-sm-10 col-md-8 col-lg-10 col-sm-offset-1 col-md-offset-2 col-lg-offset-1">
-    <div class="page-header">
-      <h2>Graduate Students</h2>
-    </div>
-    {% for grad_student in people.grad %}
+    {% for member in people.current %}
 
       {% if loop.index0 % 2 == 0 %}
       <div class="row">
@@ -67,46 +41,10 @@
           <div class="row">
             <div class="row-same-height">
               <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 same-height-pic">
-                <img class="thumbnail" src="{{ url_for('static', filename='media/people/{}'.format(grad_student.picture)) }}">
+                <img class="thumbnail" src="{{ url_for('static', filename='media/people/{}'.format(member.picture)) }}">
               </div>
               <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 same-height-text">
-              {{grad_student.md|safe}}
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {% if loop.index0 % 2 == 1 %}
-      </div>
-      {% elif loop.last %}
-      </div>
-      {% endif %}
-
-    {% endfor %}
-  </div>
-
-
-  <!-- undergrad students -->
-  <div class="col-sm-10 col-md-8 col-lg-10 col-sm-offset-1 col-md-offset-2 col-lg-offset-1">
-    <div class="page-header">
-      <h2>Undergraduate Students</h2>
-    </div>
-    {% for grad_student in people.undergrad %}
-
-      {% if loop.index0 % 2 == 0 %}
-      <div class="row">
-      {% endif %}
-
-      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
-        <div class="well person-well">
-          <div class="row">
-            <div class="row-same-height">
-              <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 same-height-pic">
-                <img class="thumbnail" src="{{ url_for('static', filename='media/people/{}'.format(grad_student.picture)) }}">
-              </div>
-              <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 same-height-text">
-              {{grad_student.md|safe}}
+              {{member.md|safe}}
               </div>
             </div>
           </div>
@@ -126,9 +64,9 @@
   <!-- former students -->
   <div class="col-sm-10 col-md-8 col-lg-10 col-sm-offset-1 col-md-offset-2 col-lg-offset-1">
     <div class="page-header">
-      <h2>Former Students</h2>
+      <h2>Former Members</h2>
     </div>
-    {% for grad_student in people.former %}
+    {% for member in people.former %}
 
       {% if loop.index0 % 2 == 0 %}
       <div class="row">
@@ -139,10 +77,10 @@
           <div class="row">
             <div class="row-same-height">
               <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 same-height-pic">
-                <img class="thumbnail" src="{{ url_for('static', filename='media/people/{}'.format(grad_student.picture)) }}">
+                <img class="thumbnail" src="{{ url_for('static', filename='media/people/{}'.format(member.picture)) }}">
               </div>
               <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 same-height-text">
-              {{grad_student.md|safe}}
+              {{member.md|safe}}
               </div>
             </div>
           </div>

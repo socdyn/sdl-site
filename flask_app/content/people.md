@@ -2,7 +2,7 @@
 
 ###### mwm14 &#8226; Sociology and Information Science
 
-&faculty&
+&current&
 
 ~MichaelMacy.png~
 
@@ -14,7 +14,7 @@ Game Theory, Networks, Social Psychology, Collective Action
 
 ### [Chris Cameron](https://confluence.cornell.edu/display/~cjc73) 
 
-&grad&
+&current&
 
 ~ChrisCameron.png~
 
@@ -26,7 +26,7 @@ Economic Sociology, Social Simulation, Processes on Networks
 
 ### Patrick Park
 
-&grad&
+&current&
 
 ~PatrickPark.jpeg~
 
@@ -38,7 +38,7 @@ Agent Based Modeling, Online Social Networks, Online Collective Action, Quantita
 
 ### Yongren Shi
 
-&grad&
+&current&
 
 ~shi_y.png~
 
@@ -50,7 +50,7 @@ Social Networks, Organization and Ecology, Opinion Dynamics, Computational Socia
 
 ### [Scott Golder](http://www.redlog.net)
 
-&grad&
+&current&
 
 ~ScottGolder.png~
 
@@ -62,7 +62,7 @@ Social Networks, Quantitative Methods, Norms, Economic Sociology, Organizations,
 
 ### [Daniel DellaPosta](http://www.danieldellaposta.com/)
 
-&grad&
+&current&
 
 ~dan_della_posta.jpg~
 
@@ -74,7 +74,7 @@ Social Networks, Social Influence, Economic and Social Exchange, Computational M
 
 ### Wei Dong
 
-&grad&
+&current&
 
 ~wei_dong.png~
 
@@ -86,7 +86,7 @@ Cross-cultural comparison on social network structures, mental representation of
 
 ### Isabel Kloumann
 
-&grad&
+&current&
 
 ~isabel_kloumann.png~
 
@@ -96,7 +96,7 @@ Cross-cultural comparison on social network structures, mental representation of
 
 ### Fedor Dokshin
 
-&grad&
+&current&
 
 ~FedorDokshin.jpeg~
 
@@ -108,7 +108,7 @@ Social Networks, Computational Methods, Political Sociology, Organizations, Envi
 
 ### George Berry
 
-&grad&
+&current&
 
 ~berry.png~
 
@@ -120,7 +120,7 @@ Computational Sociology, Social Networks, Online Interaction, Social Norms
 
 ### Antonio Sirianni
 
-&grad&
+&current&
 
 ~sirianni_a.png~
 
@@ -132,7 +132,7 @@ Social Networks, Social Psychology, Computational and Quantitative Methods
 
 ### Dana Warmsley
 
-&grad&
+&current&
 
 ~warmsley_dana.png~
 
@@ -142,7 +142,7 @@ Social Networks, Social Psychology, Computational and Quantitative Methods
 
 ### Danielle Toupo
 
-&grad&
+&current&
 
 ~toupo.png~
 
@@ -154,7 +154,7 @@ Complex systems and nonlinear dynamics, game theory, evolution of cooperation
 
 ###  Tom Davidson
 
-&grad&
+&current&
 
 ~TDavidson.png~
 
@@ -166,7 +166,7 @@ Social Network Analysis, Online Social Networks, Sociology of Culture, Political
 
 ### Mario Molina
 
-&grad&
+&current&
 
 ~unknown.png~
 
@@ -178,7 +178,7 @@ Social Norms, Economic Sociology, Networks, Social Institutions, Experiments
 
 ### Juan David Robalino
 
-&grad&
+&current&
 
 ~juan_david.png~
 
@@ -190,7 +190,7 @@ Social Influence, Behavioral Economics
 
 ### Fernando Plascencia
 
-&grad&
+&current&
 
 ~unknown.png~
 
@@ -202,7 +202,7 @@ Social Networks, Games on Networks, Behavioral Economics
 
 ### [Milena Tsvetkova](https://sites.google.com/site/milenavenelinova/)
 
-&grad&
+&current&
 
 ~MilenaTsvetkova.png~
 

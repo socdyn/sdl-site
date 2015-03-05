@@ -12,13 +12,9 @@ from random import shuffle
 #config
 DEBUG = True
 
-
 #make app
 app = Flask(__name__)
 app.config.from_object(__name__)
-#app.jinja_env.globals.update(enumerate=enumerate, len=len)
-
-
 
 #processing function
 
@@ -30,7 +26,7 @@ def preprocess_people(md):
     returns [{'picture':picture, 'md':markdown},...]
     '''
     individuals = md.split('\n\n~~~\n\n')
-    cards = {'grad': [], 'faculty': [], 'undergrad': [], 'former': []}
+    cards = {'current':[], 'former': []}
     for indv_md in individuals:
         try:
             picture_path = re.findall(r'~.*~', indv_md)[0]
@@ -43,9 +39,7 @@ def preprocess_people(md):
         except Exception as e:
             print e
 
-    for k,v in cards.items():
-        if k != 'faculty':
-            shuffle(v)
+    #sort by last name
 
     return cards
 
@@ -67,6 +61,10 @@ def preprocess_research(md):
         except Exception as e:
             print e
     return cards
+
+
+def preprocess_recents(md):
+    pass
 
 
 #routing behavior here
