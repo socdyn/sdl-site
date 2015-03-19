@@ -10,7 +10,7 @@ from flask import Flask, url_for, render_template
 from random import shuffle
 
 #config
-DEBUG = True
+DEBUG = False
 
 #make app
 app = Flask(__name__)
