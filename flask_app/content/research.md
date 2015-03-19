@@ -9,15 +9,6 @@ social networks and improve models of social contagion.
 
 ~~~
 
-#### Project
-
-
-~uris.jpeg~
-
-Desc
-
-~~~
-
 #### Cross-cultural differences in communication networks
 
 ##### 2012—Present &#8226; Supported by NSF
@@ -26,6 +17,4 @@ Desc
 
 Using Twitter data, this project aims to compare the topology of 
 communication networks by cultural and economic factors at the country level.
-
-~~~
 
