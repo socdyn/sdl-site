@@ -1,3 +1,4 @@
+
 {% extends "base_template.html" %}
 
 {% block title %}Home{% endblock %}
@@ -35,7 +36,12 @@
         <h3 class="panel-title">Recents</h3>
       </div>
       <div class="panel-body">
-        {{recent|safe}}
+        {% for event in recents %}
+        {{event|safe}}
+          {% if not loop.last %}
+          <hr/>
+          {% endif %}
+        {% endfor %}
       </div>
     </div>
   </div>

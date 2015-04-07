@@ -1,3 +1,4 @@
+
 ### [Michael Macy](http://hsd.soc.cornell.edu/mwm/)
 
 ###### mwm14 &#8226; Sociology and Information Science
@@ -305,12 +306,3 @@ Emergence of collective action, norms, solidarity, generosity, and status hierar
 ###### Sociology
 
 Conflict and Inequality, Intergroup Conflict and Intragroup Relations, Reputation Systems and Competition, Agression and Status
-
-~~~
-
-
-
-
-
-
-

@@ -4,68 +4,19 @@
 @Feb 2015
 '''
 
-import re
-from markdown2 import markdown
 from flask import Flask, url_for, render_template
 from random import shuffle
+from markdown2 import markdown
+from md_parser import preprocess_people, preprocess_research, preprocess_recents
+
+
 
 #config
-DEBUG = False
+DEBUG = True
 
 #make app
 app = Flask(__name__)
 app.config.from_object(__name__)
-
-#processing function
-
-def preprocess_people(md):
-    '''
-    splits on ~~~
-    creates "cards" for each person consisting of a picture and some text
-    finds picture path in ~tildes.png~
-    returns [{'picture':picture, 'md':markdown},...]
-    '''
-    individuals = md.split('\n\n~~~\n\n')
-    cards = {'current':[], 'former': []}
-    for indv_md in individuals:
-        try:
-            picture_path = re.findall(r'~.*~', indv_md)[0]
-            category = re.findall(r'&.*&', indv_md)[0]
-            correct_markdown = indv_md.replace('{}\n\n'.format(picture_path), '')
-            correct_markdown = correct_markdown.replace('{}\n\n'.format(category), '')
-            picture_path = picture_path.strip('~')
-            category = category.strip('&')
-            cards[category].append({"picture": picture_path, "md": markdown(correct_markdown)})
-        except Exception as e:
-            print e
-
-    #sort by last name
-
-    return cards
-
-def preprocess_research(md):
-    '''
-    splits on ~~~
-    creates "cards" for each person consisting of a picture and some text
-    finds picture path in ~tildes.png~
-    returns [{'picture':picture, 'md':markdown},...]
-    '''
-    individuals = md.split('\n\n~~~\n\n')
-    cards = []
-    for indv_md in individuals:
-        try:
-            picture_path = re.findall(r'~.*~', indv_md)[0]
-            correct_markdown = indv_md.replace('{}\n\n'.format(picture_path), '')
-            picture_path = picture_path.strip('~')
-            cards.append({"picture": picture_path, "md": markdown(correct_markdown)})
-        except Exception as e:
-            print e
-    return cards
-
-
-def preprocess_recents(md):
-    pass
-
 
 #routing behavior here
 @app.route('/')
@@ -73,8 +24,8 @@ def draw_index():
     with open('content/greeting.md', 'rb') as f:
         greeting = markdown(f.read())
     with open('content/recent.md', 'rb') as g:
-        recent = markdown(g.read())
-    return render_template('mainpage.html', greeting=greeting, recent=recent)
+        recents = preprocess_recents(g.read())
+    return render_template('mainpage.html', greeting=greeting, recents=recents)
 
 @app.route('/people')
 def draw_people():
