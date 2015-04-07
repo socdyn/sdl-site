@@ -29,25 +29,25 @@ def draw_index():
         greeting = markdown(f.read())
     with open(from_here('content/recent.md'), 'rb') as g:
         recents = preprocess_recents(g.read())
-    return render_template(from_here('mainpage.html'), greeting=greeting, recents=recents)
+    return render_template('mainpage.html', greeting=greeting, recents=recents)
 
 @app.route('/people')
 def draw_people():
     with open(from_here('content/people.md'), 'rb') as f:
         people = preprocess_people(f.read())
-    return render_template(from_here('people.html'), people=people)
+    return render_template('people.html', people=people)
 
 @app.route('/research')
 def draw_research():
     with open(from_here('content/research.md'), 'rb') as f:
         research = preprocess_research(f.read())
-    return render_template(from_here('research.html'), research=research)
+    return render_template('research.html', research=research)
 
 @app.route('/contact')
 def draw_contact():
     with open(from_here('content/contact.md'), 'rb') as f:
         contact = markdown(f.read())
-    return render_template(from_here('contact.html'), contact=contact)
+    return render_template('contact.html', contact=contact)
 
 
 #run app
