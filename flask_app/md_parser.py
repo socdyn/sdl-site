@@ -71,9 +71,7 @@ def preprocess_recents(md):
 
         correct_markdown = re.sub(r'&.*&', datestr, event)
 
-        print(correct_markdown)
         event_dict['md'] = markdown(correct_markdown)
-        print(event_dict['md'])
 
         cards.append(event_dict)
 
