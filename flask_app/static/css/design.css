@@ -21,6 +21,7 @@
     margin-top: -35px;
 }
 
+
 .row-same-height {
     display: table;
     width: 100%;
@@ -53,7 +54,7 @@
     display: table-cell;
     float: none !important;
     vertical-align: top;
-    padding-left: 0px;
+    padding-left: 6px;
 }
 
 .same-height-text-faculty {
@@ -71,10 +72,6 @@
     background-color: #F3F5F8;
 }
 
-.person-well {
-    height:210px;
-    padding-top: 7px;
-}
 
 .media {
     vertical-align: middle;
@@ -166,6 +163,27 @@ footer {
     .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
         color: #333;
     }
+}
+
+
+
+@media (max-width: 1150px) { 
+    .image-clip{
+        width:100%;
+        height: auto;
+        overflow:hidden;
+    }
+}
+
+.image-vcent {
+    margin-top:8px;
+    margin-left: auto;
+    margin-right; auto  
+}
+
+.person-hcent {
+    margin-left: auto;
+    margin-right; auto  
 }
 
 /* panel coloring */

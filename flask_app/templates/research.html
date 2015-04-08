@@ -12,7 +12,7 @@
 <!-- Hero -->
 {% block hero %}
 <div class='container-fluid'>
-  <div class="col-sm-8 col-md-8 col-lg-8 col-sm-offset-2 col-md-offset-2 col-lg-offset-2">
+  <div class="col-sm-10 col-md-10 col-lg-10 col-sm-offset-1 col-md-offset-1 col-lg-offset-1">
     <div class="page-header">
       <h1>Research&nbsp;&nbsp;<small>active and past projects</small></h1>
     </div>
@@ -23,20 +23,16 @@
 {% block content %}
 <div class="container-fluid">
   <!-- research info -->
-  <div class="col-sm-8 col-md-8 col-lg-8 col-sm-offset-2 col-md-offset-2 col-lg-offset-2">
+  <div class="col-xs-12 col-sm-10 col-md-10 col-lg-10 col-sm-offset-1 col-md-offset-1 col-lg-offset-1">
     {% for idea in research %}
-      <div class="col-sm-12 col-md-12 col-lg-12">
-        <div class="panel panel-default well">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-10 col-lg-offset-1">
+        <div class="well">
           <div class="panel-body">
-            <div class="media">
-              {% if idea.picture != 'nothing' %}
-                <div class="media-left media-middle">
-                  <img class="thumbnail" src="{{ url_for('static', filename='media/people/{}'.format(idea.picture)) }}">
-                </div>
-              {% endif %}
-              <div class="media-body">
-                {{idea.md|safe}}
-              </div>
+            <div class="hidden-xs col-sm-4 col-md-4 col-lg-4">
+              <img class="thumbnail image-clip" src="{{ url_for('static', filename='media/people/{}'.format(idea.picture)) }}">
+            </div>
+            <div class="col-xs-12 col-sm-8 col-md-8 col-lg-7">
+              {{idea.md|safe}}
             </div>
           </div>
         </div>
