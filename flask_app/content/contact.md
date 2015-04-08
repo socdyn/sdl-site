@@ -1,5 +1,7 @@
 You can contact our lab director, Michael Macy, at mwm14@cornell.edu.
 
+You can contact our lab manager, Chris Cameron, at cjc73@cornell.edu
+
 Our traditional contact info is:
 
     Social Dynamics Laboratory
