@@ -1,5 +1,5 @@
 
-### [Michael Macy](http://hsd.soc.cornell.edu/mwm/)
+### [Michael Macy](http://www.soc.cornell.edu/faculty/macy/)
 
 ###### mwm14 &#8226; Sociology and Information Science
 
