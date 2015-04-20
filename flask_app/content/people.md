@@ -193,7 +193,7 @@ Social Influence, Behavioral Economics
 
 &current&
 
-~unknown.png~
+~plascencia_f.jpg~
 
 ##### jp975 &#8226; Department of City and Regional Planning
 
@@ -201,7 +201,7 @@ Social Networks, Games on Networks, Behavioral Economics
 
 ~~~
 
-### [Milena Tsvetkova](https://sites.google.com/site/milenavenelinova/)
+### [Milena Tsvetkova](http://tsvetkova.me)
 
 &current&
 
@@ -306,3 +306,13 @@ Emergence of collective action, norms, solidarity, generosity, and status hierar
 ###### Sociology
 
 Conflict and Inequality, Intergroup Conflict and Intragroup Relations, Reputation Systems and Competition, Agression and Status
+
+~~~
+
+### Meysam Alizadeh
+
+&current&
+
+~alizadeh_m.jpg~
+
+Agent-based Modeling, Social Networks, Extremism, Opinion Dynamics
