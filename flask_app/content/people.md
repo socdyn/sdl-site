@@ -1,5 +1,4 @@
-
-### [Michael Macy](http://www.soc.cornell.edu/faculty/macy/)
+### [Michael Macy](https://sites.google.com/site/michaelmacy14/home)
 
 ###### mwm14 &#8226; Sociology and Information Science
 
