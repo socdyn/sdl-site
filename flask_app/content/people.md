@@ -312,6 +312,6 @@ Conflict and Inequality, Intergroup Conflict and Intragroup Relations, Reputatio
 
 &current&
 
-~alizadeh_m.jpg~
+~alizadeh_m.JPG~
 
 Agent-based Modeling, Social Networks, Extremism, Opinion Dynamics
