@@ -30,7 +30,7 @@ Economic Sociology, Social Simulation, Processes on Networks
 
 ~PatrickPark.jpeg~
 
-###### pp262 &#8226; Sociology
+###### pp286 &#8226; Sociology
 
 Agent Based Modeling, Online Social Networks, Online Collective Action, Quantitative Methods
 
@@ -54,7 +54,7 @@ Social Networks, Organization and Ecology, Opinion Dynamics, Computational Socia
 
 ~ScottGolder.png~
 
-###### ys334 &#8226; Sociology
+###### sag262 &#8226; Sociology
 
 Social Networks, Quantitative Methods, Norms, Economic Sociology, Organizations, Information and Communication Technologies
 
