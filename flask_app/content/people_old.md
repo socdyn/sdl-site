@@ -322,7 +322,7 @@ Agent-based Modeling, Social Networks, Extremism, Opinion Dynamics
 
 &former&
 
-~kuwabara.png~
+~kuwabara.jpg~
 
 ##### Associate Professor of Management, Columbia Business School
 
