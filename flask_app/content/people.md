@@ -6,13 +6,11 @@
 
 ~MichaelMacy.png~
 
-####Interests
-
 Human behavior and social interaction
 
 ~~~
 
-### [Chris Cameron](https://confluence.cornell.edu/display/~cjc73) 
+### [Chris Cameron](http://chrisjcameron.github.io/) 
 
 &current&
 
@@ -20,13 +18,13 @@ Human behavior and social interaction
 
 ###### cjc73 &#8226; Sociology
 
-Economic Sociology, Social Simulation, Processes on Networks
+Diffusion and other processes on networks, Computational Social Science, Social Media
 
 ~~~
 
 ### Patrick Park
 
-&current&
+&former&
 
 ~PatrickPark.jpeg~
 
@@ -38,7 +36,7 @@ Agent Based Modeling, Online Social Networks, Online Collective Action, Quantita
 
 ### Yongren Shi
 
-&current&
+&former&
 
 ~shi_y.png~
 
@@ -86,7 +84,7 @@ Cross-cultural comparison on social network structures, mental representation of
 
 ### Isabel Kloumann
 
-&current&
+&former&
 
 ~isabel_kloumann.png~
 
@@ -202,7 +200,7 @@ Social Networks, Games on Networks, Behavioral Economics
 
 ### [Milena Tsvetkova](http://tsvetkova.me)
 
-&current&
+&former&
 
 ~MilenaTsvetkova.png~
 
@@ -310,7 +308,7 @@ Conflict and Inequality, Intergroup Conflict and Intragroup Relations, Reputatio
 
 ### Meysam Alizadeh
 
-&current&
+&former&
 
 ~alizadeh_m.JPG~
 
