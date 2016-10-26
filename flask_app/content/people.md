@@ -1,3 +1,4 @@
+
 ### [Michael Macy](https://sites.google.com/site/michaelmacy14/home)
 
 ###### mwm14 &#8226; Sociology and Information Science
@@ -7,6 +8,7 @@
 ~MichaelMacy.png~
 
 Human behavior and social interaction
+
 
 ~~~
 
